@@ -1,5 +1,3 @@
-# g0v 文化部授權中心
+# semantic-ui 沙沙沙
 
-插畫、設計、影像、音樂、內容創作素材
-
-prototype: http://g0v.github.io/moc-license-center/
+http://etblue.github.io/semantic-ui-experiment

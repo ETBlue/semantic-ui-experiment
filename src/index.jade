@@ -11,7 +11,7 @@ html
     link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700")
     link(rel="stylesheet",type="text/css",href="css/index.css")
     script(src="js/vendor/modernizr-2.6.2.min.js")
-    title semantic-ui playground
+    title 法案闖天關流程圖
 
   body
     h1 法案闖天關：在單一 Bill 頁面的 Progress Bar 表示各種可能的 Scenario
@@ -248,6 +248,28 @@ html
         .ui.pointing.below.label.green 2013.10.20
         | 付委
       .ui.state.green: i.icon.check
+      .ui.step.black
+        .ui.pointing.below.label.black 預定 2013.10.25
+        | 二讀
+      .ui.state.white: i.icon.check
+      .ui.step.white 三讀
+      .ui.state.white: i.icon.check
+      .ui.step.white 頒佈
+      .ui.state.white: i.icon.check
+      .ui.step.white 生效
+
+    h2 提案成功、逕付二讀（排程中）
+    .ui.steps.seven
+      .ui.step.green
+        .ui.pointing.below.label.green 2013.10.10
+        | 提案
+      .ui.state.green
+        i.icon.check
+      .ui.step.white 一讀
+      .ui.state.white
+        i.icon.check
+      .ui.step.white 付委
+      .ui.state.white: i.icon.check
       .ui.step.black
         .ui.pointing.below.label.black 預定 2013.10.25
         | 二讀

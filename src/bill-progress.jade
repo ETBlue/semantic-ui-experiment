@@ -1,0 +1,645 @@
+!!!5
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="css/normalize.css")
+    link(rel="stylesheet" href="css/main.css")
+    link(rel="stylesheet" href="css/semantic.min.css")
+    link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700")
+    link(rel="stylesheet",type="text/css",href="css/index.css")
+    script(src="js/vendor/modernizr-2.6.2.min.js")
+    title 法案闖天關流程圖
+  body
+    .bill-progress
+      
+      h1 法案闖天關：在單一 Bill 頁面的 Progress Bar 表示各種可能的 Scenario
+
+      h2 已提案（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.white: i.icon.check
+        .ui.step.white 一讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 付委
+        .ui.state.white: i.icon.check
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、等待一讀
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green: i.icon.check
+        .ui.step.black
+          .ui.pointing.below.label.black 預定 2013.10.15
+          | 一讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 付委
+        .ui.state.white: i.icon.check
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、已一讀通過（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 付委
+        .ui.state.white: i.icon.check
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、已一讀通過但被提出復議
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green: i.icon.check
+        .ui.step.gray
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.orange: i.icon.exclamation
+        .ui.step.white 付委
+        .ui.state.white: i.icon.check
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、已一讀通過但被提出復議、已撤銷復議（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green: i.icon.check
+        .ui.step.gray
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 付委
+        .ui.state.white: i.icon.check
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、已一讀通過但被提出復議、已撤銷復議、等待委員會審查
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green: i.icon.check
+        .ui.step.gray
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green: i.icon.check
+        .ui.step.black
+          .ui.pointing.below.label.black 預定 2013.10.20
+          | 付委
+        .ui.state.white: i.icon.check
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、等待委員會審查
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.black
+          .ui.pointing.below.label.black 預定 2013.10.20
+          | 付委
+        .ui.state.white: i.icon.check
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、已付委但被轉其他委員會、等待重新一讀
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.gray
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.orange: i.icon.exclamation
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、已付委但被轉其他委員會、重新一讀通過、已重新付委通過（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.gray
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.white: i.icon.check
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、已付委通過（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.white: i.icon.check
+        .ui.step.white 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、付委成功、等待二讀
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.black
+          .ui.pointing.below.label.black 預定 2013.10.25
+          | 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、逕付二讀（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.white 一讀
+        .ui.state.white
+          i.icon.check
+        .ui.step.white 付委
+        .ui.state.white: i.icon.check
+        .ui.step.black
+          .ui.pointing.below.label.black 預定 2013.10.25
+          | 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、付委成功、已二讀（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.25
+          | 二讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、付委成功、二讀成功、等待三讀
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.25
+          | 二讀
+        .ui.state.green: i.icon.check
+        .ui.step.black
+          .ui.pointing.below.label.black 預定 2013.10.30
+          | 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、付委成功、二讀成功、已三讀（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.25
+          | 二讀
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.30
+          | 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、付委成功、二讀成功、已三讀但被覆議（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.25
+          | 二讀
+        .ui.state.green: i.icon.check
+        .ui.step.gray
+          .ui.pointing.below.label.green 2013.10.30
+          | 三讀
+        .ui.state.orange: i.icon.exclamation
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、付委成功、二讀成功、已三讀但被覆議、最後院會不同意覆議（排程中）
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.25
+          | 二讀
+        .ui.state.green: i.icon.check
+        .ui.step.gray
+          .ui.pointing.below.label.green 2013.10.30
+          | 三讀
+        .ui.state.white: i.icon.check
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、付委成功、二讀成功、已三讀但被覆議、最後院會同意覆議
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.25
+          | 二讀
+        .ui.state.green: i.icon.check
+        .ui.step.red
+          .ui.pointing.below.label.green 2013.10.30
+          | 三讀
+        .ui.state.red: i.icon.remove
+        .ui.step.white 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、付委成功、二讀成功、三讀成功、等待總統頒佈
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.25
+          | 二讀
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.30
+          | 三讀
+        .ui.state.green: i.icon.check
+        .ui.step.black
+          .ui.pointing.below.label.black 預定 2013.11.05
+          | 頒佈
+        .ui.state.white: i.icon.check
+        .ui.step.white 生效
+
+      h2 提案成功、一讀成功、付委成功、二讀成功、三讀成功、已頒佈
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.25
+          | 二讀
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.30
+          | 三讀
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.11.05
+          | 頒佈
+        .ui.state.green: i.icon.check
+        .ui.step.black
+          .ui.pointing.below.label.black 預定 2013.11.10
+          | 生效
+
+      h2 提案成功、一讀成功、付委成功、二讀成功、三讀成功、已頒佈、已生效
+      .ui.steps.seven
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.10
+          | 提案
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.15
+          | 一讀
+        .ui.state.green
+          i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.20
+          | 付委
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.25
+          | 二讀
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.10.30
+          | 三讀
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.11.05
+          | 頒佈
+        .ui.state.green: i.icon.check
+        .ui.step.green
+          .ui.pointing.below.label.green 2013.11.10
+          | 生效
+
+      h2 展開內容：沒有固定長度，支線走幾步就顯示幾步
+      h3 提案
+      .ui.small.steps
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 經ＯＯ立委送至ＯＯ單位
+        .ui.state.green: i.icon.check
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 經程序委員會排入全院院會一讀議程
+        .ui.state.green: i.icon.check
+      h3 一讀
+      .ui.small.steps
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 於院會一讀通過
+        .ui.state.green: i.icon.check
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 經程序委員會排入委員會議程
+        .ui.state.green: i.icon.check
+      h3 一讀復議
+      .ui.small.steps
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 於院會一讀通過
+        .ui.state.green: i.icon.check
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 於院會被提出復議
+        .ui.state.green: i.icon.check
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 經程序委員會排入全院院會議程
+        .ui.state.green: i.icon.check
+      h3 一讀復議撤銷
+      .ui.small.steps
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 於院會一讀通過
+        .ui.state.green: i.icon.check
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 於院會被提出復議
+        .ui.state.green: i.icon.check
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 於院會撤銷復議
+        .ui.state.green: i.icon.check
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 經程序委員會排入委員會議程
+        .ui.state.green: i.icon.check
+      h3 付委
+      .ui.small.steps
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 於委員會審查通過
+        .ui.state.green: i.icon.check
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 經程序委員會排入全院院會二讀議程
+        .ui.state.green: i.icon.check
+      h3 二讀
+      .ui.small.steps
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 於院會二讀通過
+        .ui.state.green: i.icon.check
+        .ui.step.white.no-hover
+          .ui.pointing.below.label date
+          | 經程序委員會排入全院院會三讀議程
+        .ui.state.green: i.icon.check
+      h3 （其他以此類推）
+
+
+      h2 Sample from tkirby
+      .ui.steps.seven
+        .ui.step.white 提案
+        .ui.state.orange: i.icon.exclamation
+        .ui.step.white 一讀
+        .ui.state.green: i.icon.check
+        .ui.step.black 付委
+        .ui.state.red: i.icon.remove
+        .ui.step.disabled 二讀
+        .ui.state.blue: i.icon.info.letter
+        .ui.step.disabled 三讀
+        .ui.state.purple: i.icon.ellipsis.horizontal
+        .ui.step.disabled 頒佈
+        .ui.state.teal: i.icon.question
+        .ui.step.disabled 生效
+        .ui.state.black: i.icon.legal
+
+
+    #script
+      script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+      script.
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+      script(src="js/plugins.js")
+      script(src="js/semantic.min.js")
+      script(src="js/main.js")
+

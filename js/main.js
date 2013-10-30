@@ -1,4 +1,14 @@
-$('.ui.dropdown').dropdown({'on':'hover'});
+$('.ui.dropdown')
+  .dropdown({'on':'hover'})
+;
+
+$('.ui.checkbox')
+  .checkbox()
+;
+
+$('.ui.menu')
+  .pagination()
+;
 
 $('.ui.shape')
   .shape()

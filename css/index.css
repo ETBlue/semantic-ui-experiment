@@ -1,5 +1,6 @@
 body {
   padding: 1rem 2rem 2rem 2rem;
+  background-color: #f9f9f9;
 }
 
 h1, h2 {
@@ -575,26 +576,65 @@ h3, h4 {
   color: white;
 }
 
-.ly-monitor .category.ui.segment {
-  height: 5rem;
-  line-height: 1.5rem;
-  padding: 0.5rem 0.1rem;
-  margin-bottom: 1rem;
-  text-align: center;
+.ly-monitor .selected:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  height: 100%;
+  width: 100%;
+  border: 2px orange solid;
+  z-index: 10;
+  background-color: rgba(255, 165, 0, 0);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
-.ly-monitor .ui.toggle.checkbox .box, .ly-monitor .ui.toggle.checkbox label {
+.ly-monitor .committee .ui.grid {
+  margin: 0;
+}
+.ly-monitor .committee .ui.stackable.grid .row > .column {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.ly-monitor .committee .row,
+.ly-monitor .committee .wide.column,
+.ly-monitor .committee .column {
+  padding: 0;
+  margin: 0;
+}
+.ly-monitor .committee .category.ui.button {
+  width: 100%;
+  padding: 1rem 0;
+}
+.ly-monitor .committee .ui.toggle.checkbox .box, .ly-monitor .committee .ui.toggle.checkbox label {
   margin-left: -1rem;
 }
-.ly-monitor .ui.toggle.checkbox .box.disabled, .ly-monitor .ui.toggle.checkbox label.disabled {
+.ly-monitor .committee .ui.toggle.checkbox .box.disabled, .ly-monitor .committee .ui.toggle.checkbox label.disabled {
   opacity: 0.5;
 }
-.ly-monitor .ui.toggle.checkbox .box.disabled:after, .ly-monitor .ui.toggle.checkbox label.disabled:after {
+.ly-monitor .committee .ui.toggle.checkbox .box.disabled:after, .ly-monitor .committee .ui.toggle.checkbox label.disabled:after {
   background-color: #cccccc;
 }
-.ly-monitor .ui.checkbox .box.disabled, .ly-monitor .ui.checkbox label.disabled {
+.ly-monitor .committee .ui.checkbox .box.disabled, .ly-monitor .committee .ui.checkbox label.disabled {
   cursor: default;
 }
+.ly-monitor .date .today {
+  padding-right: 2rem;
+}
+.ly-monitor .date .ui.menu .item > .label {
+  background: none;
+  color: #666666;
+}
+.ly-monitor .date .ui.pagination.menu .active.item {
+  background-color: rgba(0, 128, 0, 0.2);
+}
 
+.sitting-list .nav {
+  margin: 0 0 1rem 0;
+}
 .sitting-list .column {
   margin-bottom: 1rem;
 }

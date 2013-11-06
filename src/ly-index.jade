@@ -1,0 +1,33 @@
+!!!5
+html
+  include _head.jade
+    title 零時政府立法院
+  body
+    #navbar
+      .ui.menu.black.inverted
+        a.item.active(href="ly-index.html") 零時政府立法院
+        a.item(href="ly-calendar.html") 即將進行
+        a.item(href="ly-bill.html") 找議案
+        a.item(href="") 找立委
+        a.item(href="ly-data.html") 找資料
+        a.item(href="") 統計分析
+        a.item.right 關於
+
+    .ly-index
+      //-.level.two.menu
+        .ui.menu
+          a.item.active ...
+          a.item ...
+      h1 WIP zzz
+      .messege 
+        .text 正在現場直播：8 屆 4 會期 1 次會議
+        .ui.button 前往互動電影院
+          i.icon.right
+      h2 最新決議
+      h2 焦點話題
+      h2 熱門影音
+      h2 熱門質詢
+      h2 熱門公報
+
+    #script
+      include _script

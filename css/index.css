@@ -11,6 +11,15 @@ h3, h4 {
   margin: 1rem 0 0 0;
 }
 
+.advanced {
+  display: none;
+}
+
+.ui.label.light.gray {
+  background-color: #eeeeee;
+  color: #666666;
+}
+
 .bill-progress {
   padding: 1rem 2rem 2rem 2rem;
 }
@@ -585,16 +594,17 @@ h3, h4 {
   box-shadow: 0 -0.2em 0 inset;
 }
 
-.ly-monitor {
+.ly-bill {
   padding: 0 0 2rem 0;
 }
-.ly-monitor .advanced {
-  display: none;
+.ly-bill .ui.menu.date .item {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
-.ly-monitor .ui.menu {
+.ly-bill .ui.menu {
   margin: 0;
 }
-.ly-monitor .selected:after {
+.ly-bill .selected:after {
   content: "";
   position: absolute;
   top: -3px;
@@ -610,43 +620,43 @@ h3, h4 {
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
 }
-.ly-monitor .committee .ui.grid {
+.ly-bill .committee .ui.grid {
   margin: 0;
 }
-.ly-monitor .committee .ui.stackable.grid .row > .column {
+.ly-bill .committee .ui.stackable.grid .row > .column {
   margin: 0 !important;
   padding: 0 !important;
 }
-.ly-monitor .committee .row,
-.ly-monitor .committee .wide.column,
-.ly-monitor .committee .column {
+.ly-bill .committee .row,
+.ly-bill .committee .wide.column,
+.ly-bill .committee .column {
   padding: 0;
   margin: 0;
 }
-.ly-monitor .committee .category.ui.button {
+.ly-bill .committee .category.ui.button {
   width: 100%;
   padding: 0.7rem 0;
 }
-.ly-monitor .committee .ui.toggle.checkbox .box, .ly-monitor .committee .ui.toggle.checkbox label {
+.ly-bill .committee .ui.toggle.checkbox .box, .ly-bill .committee .ui.toggle.checkbox label {
   margin-left: -1rem;
 }
-.ly-monitor .committee .ui.toggle.checkbox .box.disabled, .ly-monitor .committee .ui.toggle.checkbox label.disabled {
+.ly-bill .committee .ui.toggle.checkbox .box.disabled, .ly-bill .committee .ui.toggle.checkbox label.disabled {
   opacity: 0.5;
 }
-.ly-monitor .committee .ui.toggle.checkbox .box.disabled:after, .ly-monitor .committee .ui.toggle.checkbox label.disabled:after {
+.ly-bill .committee .ui.toggle.checkbox .box.disabled:after, .ly-bill .committee .ui.toggle.checkbox label.disabled:after {
   background-color: #cccccc;
 }
-.ly-monitor .committee .ui.checkbox .box.disabled, .ly-monitor .committee .ui.checkbox label.disabled {
+.ly-bill .committee .ui.checkbox .box.disabled, .ly-bill .committee .ui.checkbox label.disabled {
   cursor: default;
 }
-.ly-monitor .date .today {
+.ly-bill .date .today {
   padding-right: 2rem;
 }
-.ly-monitor .date .ui.menu .item > .label {
+.ly-bill .date .ui.menu .item > .label {
   background: none;
   color: #666666;
 }
-.ly-monitor .date .ui.pagination.menu .active.item {
+.ly-bill .date .ui.pagination.menu .active.item {
   background-color: rgba(0, 128, 0, 0.2);
 }
 

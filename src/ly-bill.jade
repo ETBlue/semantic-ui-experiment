@@ -1,30 +1,33 @@
 !!!5
 html
   include _head.jade
-    title 立院監視器
+    title 議案總覽 | 零時政府立法院
   body
     #navbar
       .ui.menu.black.inverted
-        .item 立院報你知
-        a.item.active(href="ly-monitor.html") 找議案
+        a.item(href="ly-index.html") 零時政府立法院
+        a.item(href="ly-calendar.html") 即將進行
+        a.item.active(href="ly-bill.html") 找議案
         a.item(href="") 找立委
         a.item(href="ly-data.html") 找資料
         a.item(href="") 統計分析
         a.item.right 關於
 
-    .ly-monitor
+    .ly-bill
 
       .filter
         .default.level.two.menu
           .ui.menu
+            a.item 本日
+              .ui.label.light.gray 2013 11/1
             a.item.active 本會期
-              .ui.label 2013 年 10/10 - 11/11
+              .ui.label.light.gray 2013 10/10 - 11/11
             .ui.simple.dropdown.item 其他會期
               i.dropdown.icon
               .menu
+                a.item 所有會期
                 a.item 第 8 屆第 4 會期
-                  .ui.label 2013 年 8/8 - 9/9
-            a.item 所有會期
+                  .ui.label.light.gray 2013 8/8 - 9/9
             a.item.advanced(ng-click="mode='advanced'") 更多選項
             .right.menu
               .item
@@ -40,7 +43,7 @@ html
                   .item 進展速度
                   .item 相關主題被重視度
         .filter.advanced(ng-show="mode=='advanced'")
-          .ui.menu.date
+          //-.ui.menu.date
             .ui.pagination.menu
               .icon.item
                 i.icon.left.arrow

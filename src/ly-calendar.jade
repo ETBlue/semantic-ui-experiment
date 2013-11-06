@@ -1,0 +1,56 @@
+!!!5
+html
+  include _head.jade
+    title 議程總覽 | 零時政府立法院
+  body
+    #navbar
+      .ui.menu.black.inverted
+        a.item(href="ly-index.html") 零時政府立法院
+        a.item.active(href="ly-calendar.html") 即將進行
+        a.item(href="ly-bill.html") 找議案
+        a.item(href="") 找立委
+        a.item(href="ly-data.html") 找資料
+        a.item(href="") 統計分析
+        a.item.right 關於
+
+    .ly-calendar
+      .level.two.menu
+        .ui.tiered.menu
+          a.item.active 本日
+            .ui.label.light.gray 2013 11/1
+          a.item 本會期
+            .ui.label.light.gray 2013 10/10 - 11/11
+          .ui.simple.dropdown.item 其他會期
+            i.dropdown.icon
+            .menu
+              a.item 所有會期
+              a.item 第 8 屆第 4 會期
+                .ui.label.light.gray 2013 年 8/8 - 9/9
+          a.item.advanced(ng-click="mode='advanced'") 更多選項
+          .right.menu
+            .item
+              .ui.icon.input
+                input(type="text",placeholder="在此條件下搜尋...")
+                i.search.link.icon
+            .ui.simple.dropdown.item.right 排序依 舉行時間
+              i.dropdown.icon
+              .menu
+                .item.active 委員會
+                .item 主席
+          .ui.sub.menu.filter.advanced
+            a.active.item 全部
+            a.item 院會
+            a.item 程序
+            a.item 紀律
+            a.item 修憲
+            a.item 經濟
+            a.item 財政
+            a.item 內政
+            a.item 外交國防
+            a.item 社福衛環
+            a.item 教育文化
+            a.item 司法法制
+            a.item 交通
+
+    #script
+      include _script

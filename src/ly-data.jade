@@ -1,0 +1,26 @@
+!!!5
+html
+  include _head.jade
+    title 立院監視器
+  body
+    #navbar
+      .ui.menu.black.inverted
+        .item 立院報你知
+        a.item(href="ly-monitor.html") 找議案
+        a.item(href="") 找立委
+        a.item.active(href="ly-monitor.html") 找資料
+        a.item(href="") 統計分析
+        a.item.right 關於
+
+    .ly-data
+      .level.two.menu
+        .ui.menu
+          a.item.active 行事曆
+          a.item 影音紀錄
+          a.item 公報紀錄
+          a.item 投票紀錄
+          a.item 法規總覽
+          a.item 預算總覽
+
+    #script
+      include _script

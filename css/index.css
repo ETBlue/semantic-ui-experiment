@@ -579,13 +579,14 @@ h3, h4 {
   color: white;
 }
 
-.ly-monitor {
-  padding: 0 0 2rem 0;
-}
-.ly-monitor .default .ui.menu .active.item {
+.level.two.menu .ui.menu .active.item {
   -webkit-box-shadow: 0 -0.2em 0 inset;
   -moz-box-shadow: 0 -0.2em 0 inset;
   box-shadow: 0 -0.2em 0 inset;
+}
+
+.ly-monitor {
+  padding: 0 0 2rem 0;
 }
 .ly-monitor .advanced {
   display: none;
@@ -672,4 +673,7 @@ h3, h4 {
   display: inline-block;
   border: 1px #cccccc solid;
   height: 1rem;
+}
+.sitting-list .bill.ui.segment .ui.top.right.attached.label i.icon {
+  margin: 0 0 0 1rem;
 }

@@ -1,6 +1,6 @@
-$('.ui.dropdown')
-  .dropdown({'on':'hover'})
-;
+$('a.item.advanced').on('click hover',function(){
+  $('.filter.advanced').toggle();
+})
 
 $('.ui.checkbox')
   .checkbox()
@@ -15,6 +15,10 @@ $('.ui.shape')
 ;
 
 /*
+$('.ui.dropdown')
+  .dropdown({'on':'hover'})
+;
+
 $('.ui.shape')
   .shape('set next side','.draft')
   .shape('flip left')

@@ -1,5 +1,5 @@
 body {
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 0;
   background-color: #f9f9f9;
 }
 
@@ -11,6 +11,9 @@ h3, h4 {
   margin: 1rem 0 0 0;
 }
 
+.bill-progress {
+  padding: 1rem 2rem 2rem 2rem;
+}
 .bill-progress .ui.steps {
   margin-top: 2rem;
 }
@@ -576,6 +579,20 @@ h3, h4 {
   color: white;
 }
 
+.ly-monitor {
+  padding: 0 0 2rem 0;
+}
+.ly-monitor .default .ui.menu .active.item {
+  -webkit-box-shadow: 0 -0.2em 0 inset;
+  -moz-box-shadow: 0 -0.2em 0 inset;
+  box-shadow: 0 -0.2em 0 inset;
+}
+.ly-monitor .advanced {
+  display: none;
+}
+.ly-monitor .ui.menu {
+  margin: 0;
+}
 .ly-monitor .selected:after {
   content: "";
   position: absolute;
@@ -607,7 +624,7 @@ h3, h4 {
 }
 .ly-monitor .committee .category.ui.button {
   width: 100%;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
 }
 .ly-monitor .committee .ui.toggle.checkbox .box, .ly-monitor .committee .ui.toggle.checkbox label {
   margin-left: -1rem;
@@ -632,8 +649,8 @@ h3, h4 {
   background-color: rgba(0, 128, 0, 0.2);
 }
 
-.sitting-list .nav {
-  margin: 0 0 1rem 0;
+.sitting-list {
+  padding: 0 2rem 2rem 2rem;
 }
 .sitting-list .column {
   margin-bottom: 1rem;

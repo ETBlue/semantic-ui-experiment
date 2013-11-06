@@ -1,7 +1,7 @@
-@import "compass/css3"
+@import compass/css3
 
 body
-  padding: 1rem 2rem 2rem 2rem
+  padding: 0
   background-color: #f9f9f9
 
 h1,h2
@@ -10,6 +10,7 @@ h3,h4
   margin: 1rem 0 0 0
 
 .bill-progress
+  padding: 1rem 2rem 2rem 2rem
 
   .ui.steps
     margin-top: 2rem
@@ -129,6 +130,17 @@ h3,h4
   @include ui-state-color(white,  #ffffff, #ffffff)
 
 .ly-monitor
+  padding: 0 0 2rem 0
+
+  .default
+    .ui.menu .active.item
+      +box-shadow(0 -0.2em 0 inset)
+
+  .advanced
+    display: none
+
+  .ui.menu
+    margin: 0
 
   .selected:after
     content: ""
@@ -155,7 +167,7 @@ h3,h4
       margin: 0
     .category.ui.button
       width: 100%
-      padding: 1rem 0
+      padding: 0.7rem 0
     .ui.toggle.checkbox .box, .ui.toggle.checkbox label,
       margin-left: -1rem
       &.disabled
@@ -178,9 +190,7 @@ h3,h4
       background-color: rgba(green,0.2)
 
 .sitting-list
-
-  .nav
-    margin: 0 0 1rem 0
+  padding: 0 2rem 2rem 2rem
 
   .column
     margin-bottom: 1rem

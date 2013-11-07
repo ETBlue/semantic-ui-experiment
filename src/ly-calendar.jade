@@ -24,7 +24,7 @@ html
             i.dropdown.icon
             .menu
               a.item 所有會期
-              a.item 第 8 屆第 4 會期
+              a.item 8 屆 4 會期
                 .ui.label.light.gray 2013 年 8/8 - 9/9
           a.item.advanced(ng-click="mode='advanced'") 更多選項
           .right.menu
@@ -32,10 +32,12 @@ html
               .ui.icon.input
                 input(type="text",placeholder="在此條件下搜尋...")
                 i.search.link.icon
-            .ui.simple.dropdown.item.right 排序依 舉行時間
+            .ui.simple.dropdown.item.right 依 狀態
               i.dropdown.icon
               .menu
-                .item.active 委員會
+                .item 狀態
+                .item 時間
+                .item 委員會
                 .item 主席
           .ui.sub.menu.filter.advanced
             a.active.item 全部
@@ -51,6 +53,37 @@ html
             a.item 教育文化
             a.item 司法法制
             a.item 交通
+    .sitting.list
+      .ui.segment.red
+        .summary 一、審查103年度中央政府總預算案關於中央研究院單位預算。 二、審查103年度中央政府總預算案附屬單位預算關於中央研究院主管中央研究院科學研究基金。 (11月4日、11月6日及11月7日三天一次會)
+        .ui.top.left.attached.label.red 現場直播中
+          | 　
+          a.text(href="") 前往立院影城觀賞
+            i.icon.right
+        .ui.top.right.attached.label.red 2013/11/7 週四 9-17:30
+        .ui.bottom.attached.label 教育及文化委員會　主席
+          .legislator.image.ui.rounded.corner
+            img.avatar.DPP(src="http://avatars.io/50a65bb26e293122b0000073/9a8b851e007eea8f0fd81eaaa2f77a4e?size=medium")
+          | 陳淑慧
+          .text.right 8 屆 4 會期 12 次
+      .ui.segment.black
+        .summary 一、審查103年度中央政府總預算案關於中央研究院單位預算。 二、審查103年度中央政府總預算案附屬單位預算關於中央研究院主管中央研究院科學研究基金。 (11月4日、11月6日及11月7日三天一次會)
+        .ui.top.left.attached.label.black 即將開始，剩下 1 天
+        .ui.top.right.attached.label.black 2013/11/7 週四 9-17:30
+        .ui.bottom.attached.label 教育及文化委員會　主席
+          .legislator.image.ui.rounded.corner
+            img.avatar.DPP(src="http://avatars.io/50a65bb26e293122b0000073/9a8b851e007eea8f0fd81eaaa2f77a4e?size=medium")
+          | 陳淑慧
+          .text.right 8 屆 4 會期 12 次
+      .ui.segment.secondary
+        .summary 一、審查103年度中央政府總預算案關於中央研究院單位預算。 二、審查103年度中央政府總預算案附屬單位預算關於中央研究院主管中央研究院科學研究基金。 (11月4日、11月6日及11月7日三天一次會)
+        .ui.top.left.attached.label 已結束，1 天前
+        .ui.top.right.attached.label 2013/11/7 週四 9-17:30
+        .ui.bottom.attached.label 教育及文化委員會　主席
+          .legislator.image.ui.rounded.corner
+            img.avatar.DPP(src="http://avatars.io/50a65bb26e293122b0000073/9a8b851e007eea8f0fd81eaaa2f77a4e?size=medium")
+          | 陳淑慧
+          .text.right 8 屆 4 會期 12 次
 
     #script
       include _script

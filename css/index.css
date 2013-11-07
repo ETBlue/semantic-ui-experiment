@@ -11,6 +11,12 @@ h3, h4 {
   margin: 1rem 0 0 0;
 }
 
+a,
+a:link, a:hover, a:active {
+  text-decoration: none;
+  color: #333333;
+}
+
 .advanced {
   display: none;
 }
@@ -594,9 +600,6 @@ h3, h4 {
   box-shadow: 0 -0.2em 0 inset;
 }
 
-.ly-bill {
-  padding: 0 0 2rem 0;
-}
 .ly-bill .ui.menu.date .item {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
@@ -660,30 +663,45 @@ h3, h4 {
   background-color: rgba(0, 128, 0, 0.2);
 }
 
-.sitting-list {
-  padding: 0 2rem 2rem 2rem;
+.bill.list,
+.sitting.list {
+  padding: 2rem 2rem 2rem 2rem;
 }
-.sitting-list .column {
+.bill.list .column,
+.sitting.list .column {
   margin-bottom: 1rem;
 }
-.sitting-list .ui.ribbon.label {
+.bill.list .ui.ribbon.label,
+.sitting.list .ui.ribbon.label {
   margin-top: -2rem;
 }
-.sitting-list .summary {
+.bill.list .summary,
+.sitting.list .summary {
   margin: 1.5rem 0 2rem 0;
 }
-.sitting-list .sponsor.image {
+.bill.list .legislator.image,
+.sitting.list .legislator.image {
   background: none;
   white-space: nowrap;
   height: 1.5rem;
   overflow: hidden;
 }
-.sitting-list .sponsor.image img {
+.bill.list .legislator.image img,
+.sitting.list .legislator.image img {
   opacity: 0.7;
   display: inline-block;
   border: 1px #cccccc solid;
   height: 1rem;
 }
-.sitting-list .bill.ui.segment .ui.top.right.attached.label i.icon {
+.bill.list .bill.ui.segment .ui.top.right.attached.label i.icon,
+.sitting.list .bill.ui.segment .ui.top.right.attached.label i.icon {
   margin: 0 0 0 1rem;
+}
+.bill.list .text.right,
+.sitting.list .text.right {
+  float: right;
+}
+.bill.list .ui.label.red a,
+.sitting.list .ui.label.red a {
+  color: white;
 }

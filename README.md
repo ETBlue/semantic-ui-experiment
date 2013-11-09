@@ -1,3 +1,3 @@
-# semantic-ui 沙沙沙
+# semantic-ui playground
 
-http://etblue.github.io/semantic-ui-experiment
+http://g0v.github.io/semantic-ui-experiment

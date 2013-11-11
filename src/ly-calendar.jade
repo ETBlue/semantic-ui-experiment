@@ -6,12 +6,16 @@ html
     #navbar
       .ui.menu.black.inverted
         a.item(href="ly-index.html") 零時政府立法院
-        a.item.active(href="ly-calendar.html") 即將進行
-        a.item(href="ly-bill.html") 找議案
-        a.item(href="") 找立委
-        a.item(href="ly-data.html") 找資料
+        a.item.active(href="ly-calendar.html") 議程
+        a.item(href="ly-bill.html") 議案
+        a.item(href="") 立委
+        a.item(href="ly-data.html") 資料庫
         a.item(href="") 統計分析
         a.item.right 關於
+        .item.right
+          .ui.icon.input
+            input(type="text",placeholder="搜尋...")
+            i.search.link.icon
 
     .ly-calendar
       .level.two.menu
@@ -27,18 +31,13 @@ html
               a.item 8 屆 4 會期
                 .ui.label.light.gray 2013 年 8/8 - 9/9
           a.item.advanced(ng-click="mode='advanced'") 更多選項
-          .right.menu
-            .item
-              .ui.icon.input
-                input(type="text",placeholder="在此條件下搜尋...")
-                i.search.link.icon
-            .ui.simple.dropdown.item.right 依 狀態
-              i.dropdown.icon
-              .menu
-                .item 狀態
-                .item 時間
-                .item 委員會
-                .item 主席
+          .ui.simple.dropdown.item.right 依 狀態
+            i.dropdown.icon
+            .menu
+              .item 狀態
+              .item 時間
+              .item 委員會
+              .item 主席
           .ui.sub.menu.filter.advanced
             a.active.item 全部
             a.item 院會

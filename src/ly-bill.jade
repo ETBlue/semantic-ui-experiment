@@ -3,6 +3,22 @@ extends template-ly
 block subtitle
   | 議案總覽 
 
+block navbar
+
+  #navbar
+    .ui.menu.black.inverted
+      a.item(href="ly-index.html") 零時政府立法院
+      a.item(href="ly-calendar.html") 議程
+      a.item.active(href="ly-bill.html") 議案
+      a.item(href="") 立委
+      a.item(href="ly-data.html") 資料庫
+      a.item(href="") 統計分析
+      a.item.right 關於
+      .item.right
+        .ui.icon.input
+          input(type="text",placeholder="搜尋...")
+          i.search.link.icon
+
 block content
   .ly-bill
 

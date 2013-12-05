@@ -1,0 +1,259 @@
+extends template-ly
+
+block subtitle
+  | 立法委員 
+
+block navbar
+
+  #navbar
+    .ui.menu.black.inverted
+      a.item(href="ly-index.html") 國會大代誌
+      a.item(href="ly-calendar.html") 議程
+      a.item(href="ly-bill.html") 議案
+      a.item.active(href="ly-legislator.html") 立委
+      a.item(href="ly-data.html") 資料庫
+      a.item(href="ly-statistic.html") 統計分析
+      a.item.right 關於
+      .item.right
+        .ui.icon.input
+          input(type="text",placeholder="搜尋...")
+          i.search.link.icon
+
+block content
+
+  .ly-legislator
+
+    .filter
+      .default.level.two.menu
+        .ui.menu
+          .item 偵測目前地點的選區立委
+          a.item.active 指定過濾條件
+          a.ui.simple.dropdown.item 第8屆
+            .ui.label.light.gray 2012-2016
+            i.dropdown.icon
+            .menu
+              .item 所有屆期
+              .item 第1屆
+                .ui.label.light.gray 1948-1992
+              .item 第2屆
+                .ui.label.light.gray 1992-1995
+              .item 第3屆
+                .ui.label.light.gray 1995-1998
+              .item 第4屆
+                .ui.label.light.gray 1998-2001
+              .item 第5屆
+                .ui.label.light.gray 2001-2004
+              .item 第6屆
+                .ui.label.light.gray 2008-2012
+              .item 第7屆
+                .ui.label.light.gray 2008-2012
+              .item.active 第8屆
+                .ui.label.light.gray 2012-2016
+          a.ui.simple.dropdown.item 所有選區
+            i.dropdown.icon
+            .menu
+              .item.active 所有選區
+              .item 所有不分區
+              .item 所有分區
+              .submenu
+                .item 新竹縣
+                .item 新竹市
+                .item 台中縣
+                .item 台中市
+          //-.ui.simple.dropdown.item 所有分區
+            i.dropdown.icon
+            .menu
+              a.item 所有分區
+              a.item 中區
+              a.item 西區
+          //-.ui.simple.dropdown.item 所有村里
+            i.dropdown.icon
+            .menu
+              a.item 所有村里
+              a.item 公館里
+          //-.ui.simple.dropdown.item 所有村里
+            i.dropdown.icon
+            .menu
+              a.item 所有村里
+              a.item 公館里
+          .ui.simple.dropdown.item 所有黨籍
+            i.dropdown.icon
+            .menu
+              a.item.active 所有黨籍
+              a.item 綠黨
+              a.item 台灣團結聯盟
+              a.item 民主進步黨
+              a.item 親民黨
+              a.item 新黨
+              a.item 中國國民黨
+          .ui.simple.dropdown.item 所有委員會
+            i.dropdown.icon
+            .menu
+              a.item.active 所有委員會
+              a.item 程序
+              a.item 紀律
+          //-a.item.advanced(ng-click="mode='advanced'") 更多選項
+          .ui.simple.dropdown.item.right 評比模式
+            i.dropdown.icon
+            .menu
+              .item 聯絡簿模式
+              .item.active 評比模式
+      //-.filter.advanced(ng-show="mode=='advanced'")
+
+    .list
+
+      .option.level.two.menu
+        .ui.menu
+          .item 顯示類別
+          .ui.buttons
+            .ui.button.info
+              i.icon.checkmark.sign
+              | 基本資料
+            .ui.button.attend.white
+              i.icon.checkbox.empty
+              | 出席狀況
+            .ui.button.bill.white
+              i.icon.checkbox.empty
+              | 議事內容
+            .ui.button.team.white 
+              i.icon.checkbox.empty
+              | 團隊經營
+            .ui.button.statistic.white 
+              i.icon.checkbox.empty
+              | 網友關注
+
+      table.ui.sortable.table
+        thead
+          tr.category
+            td(colspan='2') 立委
+            td(colspan='4').info 基本資料
+            td(colspan='5').attend 出席狀況
+            td(colspan='4').bill 議事內容
+            td(colspan='3').team 團隊經營
+            td(colspan='4').statistic 網友關注
+        thead
+          tr.item
+            th 頭像
+            th 姓名
+            //-th 最高學歷
+            //-th 性別
+
+            th.info 屆期
+            th.info 選區
+            th.info 黨籍
+            th.info 委員會
+
+            th.attend 任職時間
+            th.attend 出席率
+            th.attend 參與率
+            th.attend 發言量
+            th.attend 質詢量
+
+            th.bill 提案數
+            th.bill 提案成功率
+            th.bill 阻案數
+            th.bill 政黨服從度
+
+            th.team 助理人數
+            th.team 助理最低薪資
+            th.team 助理流動率
+
+            th.statistic 瀏覽數
+            th.statistic 討論數
+            th.statistic 分享數
+            th.statistic 立院影城排名
+
+        tbody
+          tr
+            td ...
+            td 尤美女
+            td.info 7, 8
+            td.info 全國不分區
+            td.info 民主進步黨
+            td.info ...
+            td.attend ...
+            td.attend ...
+            td.attend ...
+            td.attend...
+            td.attend ...
+            td.bill ...
+            td.bill ...
+            td.bill ...
+            td.bill ...
+            td.team ...
+            td.team ...
+            td.team ...
+            td.statistic ...
+            td.statistic ...
+            td.statistic ...
+            td.statistic ...
+          tr
+            td ...
+            td 尤美女
+            td.info 7, 8
+            td.info 全國不分區
+            td.info 民主進步黨
+            td.info ...
+            td.attend ...
+            td.attend ...
+            td.attend ...
+            td.attend...
+            td.attend ...
+            td.bill ...
+            td.bill ...
+            td.bill ...
+            td.bill ...
+            td.team ...
+            td.team ...
+            td.team ...
+            td.statistic ...
+            td.statistic ...
+            td.statistic ...
+            td.statistic ...
+          tr
+            td ...
+            td 尤美女
+            td.info 7, 8
+            td.info 全國不分區
+            td.info 民主進步黨
+            td.info ...
+            td.attend ...
+            td.attend ...
+            td.attend ...
+            td.attend...
+            td.attend ...
+            td.bill ...
+            td.bill ...
+            td.bill ...
+            td.bill ...
+            td.team ...
+            td.team ...
+            td.team ...
+            td.statistic ...
+            td.statistic ...
+            td.statistic ...
+            td.statistic ...
+        tfoot
+          tr
+            th 
+            th 共 _ 人
+            th.info 包含 7, 8 屆
+            th.info 跨 _ 選區
+            th.info 民進黨 _ 人，國民黨 _ 人
+            th.info 跨 _ 委員會
+            th.attend 平均 _ 年
+            th.attend 平均 _%
+            th.attend 平均 _%
+            th.attend 平均 _
+            th.attend 平均 _
+            th.bill 平均 _
+            th.bill 平均 _%
+            th.bill 平均 _
+            th.bill 平均 _
+            th.team 平均 _
+            th.team 平均 _
+            th.team 平均 _%
+            th.statistic 平均 _
+            th.statistic 平均 _
+            th.statistic 平均 _
+            th.statistic

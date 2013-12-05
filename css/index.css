@@ -17,7 +17,9 @@ a:link, a:hover, a:active {
   color: #333333;
 }
 
-.advanced {
+.advanced,
+.hidden,
+.invisible {
   display: none;
 }
 
@@ -704,4 +706,14 @@ a:link, a:hover, a:active {
 .bill.list .ui.label.red a,
 .sitting.list .ui.label.red a {
   color: white;
+}
+
+.ly-legislator table .category {
+  background-color: #eeeeee;
+}
+.ly-legislator table .category td {
+  color: #666666;
+}
+.ly-legislator table .item {
+  background-color: #dddddd;
 }

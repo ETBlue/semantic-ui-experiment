@@ -1,7 +1,7 @@
 extends template-ly
 
 block subtitle
-  | 資料庫 
+  | 立法委員 
 
 block navbar
 
@@ -11,8 +11,8 @@ block navbar
       a.item(href="ly-calendar.html") 議程
       a.item(href="ly-bill.html") 議案
       a.item(href="ly-legislator.html") 立委
-      a.item.active(href="ly-data.html") 資料庫
-      a.item(href="ly-statistic.html") 統計分析
+      a.item(href="ly-data.html") 資料庫
+      a.item.active(href="ly-statistic.html") 統計分析
       a.item.right 關於
       .item.right
         .ui.icon.input
@@ -21,12 +21,8 @@ block navbar
 
 block content
 
-  .ly-data
+  .ly-statistic
     .level.two.menu
       .ui.menu
-        a.item.active 行事曆
-        a.item 影音紀錄
-        a.item 公報紀錄
-        a.item 投票紀錄
-        a.item 法規總覽
-        a.item 預算總覽
+        a.item.active ...
+        a.item ...

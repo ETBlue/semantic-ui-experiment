@@ -708,6 +708,37 @@ a:link, a:hover, a:active {
   color: white;
 }
 
+.ly-legislator .list {
+  padding: 2rem;
+}
+.ly-legislator .list h1, .ly-legislator .list h2, .ly-legislator .list h3, .ly-legislator .list h4 {
+  margin: 0;
+  padding: 0;
+}
+.ly-legislator .contact .image {
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  border: 5px white solid;
+  float: left;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.ly-legislator .contact .image img {
+  position: relative;
+  z-index: -1;
+  max-width: 10rem;
+}
+.ly-legislator .contact .content {
+  margin-left: 11rem;
+}
+.ly-legislator .contact .content p {
+  margin: 1rem 0;
+}
 .ly-legislator table .category {
   background-color: #eeeeee;
 }

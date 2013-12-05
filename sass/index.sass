@@ -249,9 +249,11 @@ a:link,a:hover,a:active
       overflow: hidden
       +box-shadow(0 0 10px rgba(0,0,0,0.3))
       img
-        position: relative
-        z-index: -1
-        max-width: 6rem
+        opacity: 0
+      opacity: .7
+      &:hover
+        opacity: 1
+        +rotate(-3deg)
     .content
       margin-left: 8rem
       h3

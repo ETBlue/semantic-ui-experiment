@@ -727,11 +727,18 @@ a:link, a:hover, a:active {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.7;
 }
 .ly-legislator .contact .image img {
-  position: relative;
-  z-index: -1;
-  max-width: 6rem;
+  opacity: 0;
+}
+.ly-legislator .contact .image:hover {
+  opacity: 1;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
 }
 .ly-legislator .contact .content {
   margin-left: 8rem;

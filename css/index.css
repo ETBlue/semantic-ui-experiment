@@ -716,8 +716,8 @@ a:link, a:hover, a:active {
   padding: 0;
 }
 .ly-legislator .contact .image {
-  width: 10rem;
-  height: 10rem;
+  width: 6rem;
+  height: 6rem;
   background-color: white;
   border: 5px white solid;
   float: left;
@@ -731,13 +731,31 @@ a:link, a:hover, a:active {
 .ly-legislator .contact .image img {
   position: relative;
   z-index: -1;
-  max-width: 10rem;
+  max-width: 6rem;
 }
 .ly-legislator .contact .content {
-  margin-left: 11rem;
+  margin-left: 8rem;
 }
-.ly-legislator .contact .content p {
-  margin: 1rem 0;
+.ly-legislator .contact .content h3 {
+  padding: 0.5rem 0;
+  border-bottom: 1px #999999 solid;
+}
+.ly-legislator .contact .content h3 .text {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.ly-legislator .contact .content h3 .right {
+  float: right;
+}
+.ly-legislator .contact .content .detail p {
+  padding: 0.5rem 0;
+  border-bottom: 1px #cccccc dashed;
+}
+.ly-legislator .contact .content .detail p i.ui.icon {
+  margin-left: 1rem;
+}
+.ly-legislator .contact .content .detail p:last-child {
+  border-bottom: none;
 }
 .ly-legislator table .category {
   background-color: #eeeeee;

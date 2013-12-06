@@ -775,9 +775,9 @@ a:link, a:hover, a:active {
 .ly-legislator .evaluate table {
   margin-top: 1rem;
 }
-.ly-legislator .evaluate table .category {
-  background-color: white;
-}
 .ly-legislator .evaluate table .category td {
   color: #666666;
+}
+.ly-legislator .evaluate table .item th:hover {
+  background-color: rgba(0, 0, 0, 0.08);
 }

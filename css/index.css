@@ -764,12 +764,20 @@ a:link, a:hover, a:active {
 .ly-legislator .contact .content .detail p:last-child {
   border-bottom: none;
 }
-.ly-legislator table .category {
-  background-color: #eeeeee;
+.ly-legislator .evaluate .option .ui.button {
+  border-bottom: 1px #dddddd solid;
 }
-.ly-legislator table .category td {
+.ly-legislator .evaluate .option .inactive {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.ly-legislator .evaluate table {
+  margin-top: 1rem;
+}
+.ly-legislator .evaluate table .category {
+  background-color: white;
+}
+.ly-legislator .evaluate table .category td {
   color: #666666;
-}
-.ly-legislator table .item {
-  background-color: #dddddd;
 }

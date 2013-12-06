@@ -9,26 +9,26 @@ block list
         .ui.menu
           .item 選擇顯示欄位：
           .ui.buttons
-            .ui.button.info
+            .ui.button.info.white
               i.icon.checkmark.sign
               | 基本資料
-            .ui.button.attend.white
+            .ui.button.attend.white.inactive
               i.icon.checkbox.empty
               | 出席狀況
-            .ui.button.bill.white
+            .ui.button.bill.white.inactive
               i.icon.checkbox.empty
               | 議事內容
-            .ui.button.team.white 
+            .ui.button.team.white.inactive
               i.icon.checkbox.empty
               | 團隊經營
-            .ui.button.statistic.white 
+            .ui.button.statistic.white.inactive 
               i.icon.checkbox.empty
               | 網友關注
 
-      table.ui.sortable.table
+      table.ui.sortable.table.segment
         thead
           tr.category
-            td(colspan='2') 立委
+            td(colspan='1')
             td(colspan='4').info 基本資料
             td(colspan='5').attend 出席狀況
             td(colspan='4').bill 議事內容
@@ -36,8 +36,7 @@ block list
             td(colspan='4').statistic 網友關注
         thead
           tr.item
-            th 頭像
-            th.sort.descending 姓名
+            th 姓名
             //-th 最高學歷
             //-th 性別
 
@@ -65,10 +64,8 @@ block list
             th.statistic 討論數
             th.statistic 分享數
             th.statistic 立院影城排名
-
         tbody
           tr
-            td ...
             td 尤美女
             td.info 7, 8
             td.info 全國不分區
@@ -91,9 +88,8 @@ block list
             td.statistic ...
             td.statistic ...
           tr
-            td ...
             td 尤美女
-            td.info 7, 8
+            td.info 6
             td.info 全國不分區
             td.info 民主進步黨
             td.info ...
@@ -114,9 +110,8 @@ block list
             td.statistic ...
             td.statistic ...
           tr
-            td ...
             td 尤美女
-            td.info 7, 8
+            td.info 5
             td.info 全國不分區
             td.info 民主進步黨
             td.info ...
@@ -138,7 +133,6 @@ block list
             td.statistic ...
         tfoot
           tr
-            th 
             th 共 _ 人
             th.info 包含 7, 8 屆
             th.info 跨 _ 選區

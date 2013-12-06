@@ -273,10 +273,17 @@ a:link,a:hover,a:active
           &:last-child
             border-bottom: none
 
-  table
-    .category
-      background-color: #eee
-      td
-        color: #666
-    .item
-      background-color: #ddd
+  .evaluate
+    .option
+      .ui.button
+        border-bottom: 1px #ddd solid
+      .inactive
+        +box-shadow(none)
+    table
+      margin-top: 1rem
+      .category
+        background-color: #fff
+        td
+          color: #666
+//      .item
+//        background-color: #ddd

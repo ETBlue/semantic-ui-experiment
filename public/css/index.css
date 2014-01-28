@@ -784,30 +784,47 @@ a:link, a:hover, a:active {
 
 .ly-index {
   margin: 0 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
-.ly-index .ui.grid .column {
+.ly-index .ui.stackable.grid {
+  margin: 0;
+}
+.ly-index .ui.stackable.grid .row {
   position: relative;
-  margin: 1rem 0;
-  padding: 1rem;
-  min-height: 9rem;
+  margin: 0;
+  padding: 0;
   background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px #cccccc dashed;
 }
 @media only screen and (max-width: 768px) {
-  .ly-index .ui.grid .column {
+  .ly-index .ui.stackable.grid .row:first-child .column:first-child {
+    padding: 1rem;
+  }
+}
+.ly-index .ui.stackable.grid .row .column {
+  padding: 1rem;
+}
+.ly-index .ui.stackable.grid .row .column:first-child {
+  min-height: 10rem;
+}
+@media only screen and (max-width: 768px) {
+  .ly-index .ui.stackable.grid .row .column {
+    padding: 1rem !important;
     margin: 0 !important;
+  }
+  .ly-index .ui.stackable.grid .row .column:first-child {
     padding: 1rem !important;
   }
 }
-.ly-index .ui.grid .column .ui.image {
+.ly-index .ui.stackable.grid .row .ui.image {
   text-align: center;
   position: absolute;
 }
-.ly-index .ui.grid .column .ui.pointing.label {
+.ly-index .ui.stackable.grid .row .ui.pointing.label {
   margin-left: 7rem;
   font-size: 1.5rem;
   background-color: white;
 }
-.ly-index .ui.grid .column .ui.pointing.label:before {
+.ly-index .ui.stackable.grid .row .ui.pointing.label:before {
   background-color: white;
 }

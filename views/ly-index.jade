@@ -1,0 +1,69 @@
+extends template-ly
+
+block subtitle
+  | 首頁 
+
+block navbar
+
+  #navbar
+    .ui.menu.black.inverted
+      a.item.active(href="ly-index.html") 國會大代誌
+      a.item(href="ly-calendar.html") 議程
+      a.item(href="ly-bill.html") 議案
+      a.item(href="ly-legislator-contact.html") 立委
+      a.item(href="ly-data.html") 資料庫
+      a.item(href="ly-statistic.html") 統計分析
+      a.item.right 關於
+      .item.right
+        .ui.icon.input
+          input(type="text",placeholder="搜尋...")
+          i.search.link.icon
+
+block content
+
+  .ly-index
+
+    .ui.menu.tabular
+      .item 熱門議案
+      a.item.active 本日
+        .ui.green.label 13
+      a.item 本週
+        .ui.green.label 28
+      a.item 本月
+        .ui.green.label 54
+    .ui.two.column.stackable.celled.grid
+      .row
+        .column
+          .ui.left.corner.red.label 冠
+          .ui.rounded.corner.image
+            img(src="img/100x100.jpg")
+            .text
+              | 外星藍
+            .text
+              i.icon.trophy
+              | 999
+          .ui.pointing.left.label 行政執行法第十七條及第十七條之一條文修正草案
+        .column some feedback or statistics
+      .row
+        .column
+          .ui.left.corner.red.label 亞
+          .ui.rounded.corner.image
+            img(src="img/100x100.jpg")
+            .text
+              | 外星藍
+            .text
+              i.icon.trophy
+              | 999
+          .ui.pointing.left.label 行政執行法第十七條及第十七條之一條文修正草案
+        .column some feedback or statistics
+  //-.ly-index
+    h1 WIP zzz
+    .messege 
+      .text 正在現場直播：8 屆 4 會期 1 次會議
+      .ui.button 前往互動電影院
+        i.icon.right
+    h2 最新決議
+    h2 焦點話題
+    h2 熱門影音
+    h2 熱門質詢
+    h2 熱門公報
